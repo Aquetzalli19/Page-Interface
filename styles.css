@@ -1,0 +1,141 @@
+:root{
+    --maincolor: #FFD782;
+    --secondaryColor: #FFAF61;
+    --otherColor: #FE6564;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62.5%;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+p{
+    font-size: 1.8rem;
+}
+header .barnav1{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+header .barnav1 img{
+    padding: 0.5rem;
+    margin-left: 8rem;
+    width: 8rem;
+    height: 8rem;
+}
+header .barnav1 ul{
+    width: 40rem;
+    margin-right: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+header .barnav1 ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header .barnav1 ul li i{
+    margin: 0.5rem;
+}
+header nav.barnav2 ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    background-color: var(--secondaryColor);
+    z-index: 200;
+}
+header .barnav2 ul li{
+    list-style: none;
+    padding: 1rem;
+}
+header .barnav2 ul li  a{
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+}
+.header_img{
+    text-align: center;
+    height: 50rem;
+}
+.header_img img {
+    height: 55rem;
+}
+.cards__contain{
+    height: 20rem;
+    display: flex;
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+.card{
+    width: 25%;
+    margin: 0.3rem;
+    background-color: #F2F2F2;
+    font-size: 5rem;
+}
+.card i{
+    color: var(--secondaryColor);
+    
+}
+.info__contain{
+    height: 64rem;
+    text-align: center;
+    background-color: var(--maincolor);
+}
+.blocks{
+    display: flex;
+    justify-content: space-evenly;
+}
+.block__info{
+    width: 47%;
+    gap: 0.3rem;
+    background-color: var(--otherColor);
+    border-radius: 0.6rem;
+    -webkit-box-shadow: 0px 4px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px -3px rgba(0,0,0,0.75);
+}
+.block__info img{
+    width: 60%;
+}
+.contactar{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 15rem;
+}
+.contactar img{
+    width: 65%;
+}
+.contactar__contain a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondaryColor);
+    color: #fff;
+}
+.contactar__contain a:hover{
+    background-color: var(--otherColor);
+}
