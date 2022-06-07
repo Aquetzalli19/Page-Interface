@@ -135,7 +135,11 @@ header .barnav2 ul li  a{
     border-radius: 1rem;
     background-color: var(--secondaryColor);
     color: #fff;
+    font-weight: bold;
 }
 .contactar__contain a:hover{
     background-color: var(--otherColor);
+}
+footer{
+    text-align: center;
 }
