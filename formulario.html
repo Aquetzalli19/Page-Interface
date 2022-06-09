@@ -26,69 +26,88 @@
         </nav>
         <nav class="barnav2">
             <ul>
-                <li><a href="#">punto de venta</a></li>
-                <li><a href="#">servicios</a></li>
-                <li><a href="#">casos de exito</a></li>
-                <li><a href="#">cursos y ayuda</a></li>
-                <li><a href="#">soporte</a></li>
-                <li><a href="#">mi pedido</a></li>
-            </ul>
-            <div class="header_img">
-                <img src="img/Oferta.jpeg" alt="oferta">
-            </div>
+                <li><a href="#">Punto de venta</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Casos de exito</a></li>
+                <li><a href="#">Cursos y ayuda</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Mi pedido</a></li>
+            </ul> 
         </nav>
     </header>
-    <main>
-        <div class="cards__contain">
-            <div class="card">
-                <h2 class="tittle_card">Dynamart Software</h2>
-                <p class="text_card">Giros Comerciales</p>
-                <i class="fa-solid fa-laptop-code"></i>
-            </div>
-            <div class="card">
-                <h2 class="tittle_card">Dynamart Tienda</h2>
-                <p class="text_card">Kits Puntos de venta</p>
-                <i class="fa-solid fa-store"></i>
-            </div>
-            <div class="card">
-                <h2 class="tittle_card">Dynamart Cursos</h2>
-                <p class="text_card">Aprende a usarnos</p>
-                <i class="fa-solid fa-circle-play"></i>
-            </div>
-            <div class="card">
-                <h2 class="tittle_card">Dynamart Soporte</h2>
-                <p class="text_card">Estamos para servirte</p>
-                <i class="fa-solid fa-question"></i>
-            </div>
-        </div>
-    </main>
-    <section class="info__contain">
-        <div class="info__container">
-            <h1 class="info_tiitle">¿Como me ayudo Dynamart?</h1>
-            <p class="text_info">Somos la clase de personas que te cuidan y protegen cuando los momentos se ponen dificiles <br>Más que amigos, somos familia </br></p>
-        </div>
-        <div class="blocks">
-            <div class="block__info">
-                <h2>¿Por qué elegir Dynamart Un Sistema, Toda una experiencia?</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non distinctio accusantium asperiores, quidem itaque? Suscipit sint hic nam libero dolore, ut atque! Omnis architecto enim mollitia doloremque culpa quibusdam.</p>
-                <img src="img/img1.jpeg" alt="">
-            </div>
-            <div class="block__info">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit?</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non distinctio accusantium asperiores, quidem itaque? Suscipit sint hic nam libero dolore, ut atque! Omnis architecto enim mollitia doloremque culpa quibusdam.</p>
-                <img src="img/img2.jpeg" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="contactar">
-        <img src="img/Dy2.png" alt="">
+    <html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
 
-        <div class="contactar__contain">
-            <h2>Experiencias increíblemente fantásticas</h2>
-            <p>Somos más que un sistema, Somos Dynamart una Forma de TRABAJAR que da RESULTADOS.</p>
-            <a href="#" >contactar</a>
-        </div>
-    </section>
+  <!-- Enlace al documento css. no aplicable en codepen.
+  <link rel="stylesheet" type="text/css" href="contact-form.css">
+-->
+  
+  </head>
+
+
+<body>  
+  
+  <!-- formulario de contacto en html y css -->  
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>¡Contáctanos!</h1>
+
+        <h3>Escríbenos y pronto nos pondremos en contacto contigo</h3>
+
+          <form action="submeter-formulario.php" method="post">       
+
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+                  
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+</body>
+</html>
+
     <footer>
         <p>&copyDynamart</p>
     </footer>

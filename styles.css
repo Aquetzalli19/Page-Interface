@@ -1,7 +1,7 @@
 :root{
     --maincolor: #FFD782;
     --secondaryColor: #FFAF61;
-    --otherColor: #FE6564;
+    --otherColor: #ff8181;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -28,7 +28,8 @@ p{
 header .barnav1{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+    margin-top:16px;
 }
 header .barnav1 img{
     padding: 0.5rem;
@@ -45,6 +46,7 @@ header .barnav1 ul{
     list-style: none;
     text-decoration: none;
     font-size: 1.3rem;
+    
 }
 header .barnav1 ul li a{
     text-decoration: none;
@@ -63,6 +65,7 @@ header nav.barnav2 ul{
     background-color: var(--secondaryColor);
     z-index: 200;
 }
+
 header .barnav2 ul li{
     list-style: none;
     padding: 1rem;
@@ -80,16 +83,17 @@ header .barnav2 ul li  a{
     height: 55rem;
 }
 .cards__contain{
-    height: 20rem;
+    height: 23rem;
     display: flex;
     margin: 1rem;
+    margin-bottom: 7rem;
     text-align: center;
     justify-content: center;
 }
 .card{
-    width: 25%;
+    width: 35%;
     margin: 0.3rem;
-    background-color: #F2F2F2;
+    background-color: #e7e5e5;
     font-size: 5rem;
 }
 .card i{
@@ -97,9 +101,13 @@ header .barnav2 ul li  a{
     
 }
 .info__contain{
-    height: 64rem;
+    height: 73rem;
     text-align: center;
     background-color: var(--maincolor);
+}
+
+.info__container{
+    padding:20px 0px; 
 }
 .blocks{
     display: flex;
@@ -137,9 +145,107 @@ header .barnav2 ul li  a{
     color: #fff;
     font-weight: bold;
 }
+
+.contactar__contain span{
+    font-weight: bolder;
+    color: #0e0e0e;
+}
 .contactar__contain a:hover{
     background-color: var(--otherColor);
 }
 footer{
     text-align: center;
 }
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 6px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    
+    margin-bottom: 20px; 
+    margin-top: 20px;   
+    text-transform: uppercase;
+    background-color: #fca249; 
+    border-color: #FFAF61; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color: #dd99cd; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+
+  #enviar{
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+
+  }
+
+  .formulario h1{
+      text-align: center;
+  }
+
+  #enviar:hover{
+      background-color:#ff8d1b ;
+  }
