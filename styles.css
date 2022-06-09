@@ -347,3 +347,14 @@ footer{
     margin-left: 0;
     padding-bottom: 15px;
 }
+
+.logo{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    color: #fc6363;
+}
