@@ -1,7 +1,7 @@
 :root{
     --maincolor: #FFD782;
-    --secondaryColor: #FFAF61;
-    --otherColor: #ff8181;
+    --secondaryColor: #fcb56f;
+    --otherColor: #fa8383;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -9,7 +9,7 @@ html {
     font-family: 'Lato', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 62.5%;
-
+    background-color: #faf2e1;
 }
 *,
 *:before,
@@ -164,7 +164,7 @@ footer{
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
-    background-color: #fbfbfb; 
+    background-color: #faf2df; 
     padding-left: 30px; 
   }
   
@@ -249,3 +249,101 @@ footer{
   #enviar:hover{
       background-color:#ff8d1b ;
   }
+
+  /*PARTE DE FUNCIONAMIENTO XD*/
+.blocksFunc{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.block1 {
+    align-items: center;
+    justify-content: center;
+    background-color: #faf2df;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.block1 p{
+    font-size: 20px;
+}
+
+.block2 {
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--otherColor);
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+.h2Block2 {
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+.containerBlock2 {
+    display: flex;
+    
+}
+
+
+
+.imgyTexto {
+    margin-inline: 8rem;
+}
+
+.block3 {
+    margin-top: 5rem;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    margin-left: 15em;
+    margin-right: 15rem;
+    margin-bottom: 3rem;
+}
+
+.block3 h2, p{
+    margin-left: 2rem;
+}
+
+.block4 {
+    margin-top: 5rem;
+    align-items: center;
+    align-content: center;
+    margin-left: 15em;
+    margin-right: 15rem;
+    margin-bottom: 3rem;
+}
+
+.titleBlock4 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.containerBlock4 {
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.containerBlock4 img{
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+.block4Left {
+    margin-right: 5rem;
+    margin-left: 9rem;
+}
+
+.block4Right {
+    text-align: right;
+}
+
+.contactar__contain p{
+    margin-left: 0;
+    padding-bottom: 15px;
+}
